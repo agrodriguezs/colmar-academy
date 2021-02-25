@@ -60,17 +60,20 @@ nav ul li a{
     color: rgb(87, 87, 87);
     text-decoration: none;
 }
+.short{
+    display: none;
+}
 section {
     display: block;
 }
-main {
-    
+main,footer {
+    border: 1px solid  rgb(209, 208, 208);
     position: relative;
     top: 64px;
 }
 #learn {
     display: flex;
-    background-color: rgb(161, 161, 161);
+    background-color: #DBDBDB;
 }
 #learn img{
     width:  60%;
@@ -83,7 +86,7 @@ main {
   flex-wrap:nowrap;
   justify-content:center;
   align-content:center;
-  color: rgb(58, 58, 58);
+  color:#323A44;
   padding: 2rem 1.5rem;
   
 }
@@ -130,11 +133,15 @@ main {
     width: 100%;
     margin-bottom: 2rem;
 }
+#thesis article h2 {
+    width: 100%;
+    margin: 0rem;
+}
 #orientation ul li,
 #thesis ul li {
     display: flex;
     padding: 1rem;
-    border: 1px solid rgb(211, 210, 210);
+    border: 1px solid rgb(190, 190, 190);
 }
 #orientation ul li img,
 #thesis ul li img{
@@ -181,6 +188,34 @@ main {
     grid-template-rows: 400px 400px;
     padding: 0rem 3.5rem 2rem 3.5rem;
 }
+#thesis .thesis-content h2{
+    padding-bottom: 0rem;
+
+}
+#thesis .thesis-content p{
+    padding-bottom:2rem;
+
+}
+#thesis {
+    background-color:  rgb(236, 236, 236);
+}
+.thesis-content {
+    
+    display: flex;
+
+}
+#thesis article {
+   
+    order:0;
+    flex:0 0 60%;
+    padding: 0rem 1.5rem;
+    color:rgb(58, 58, 58);
+
+}
+#thesis video{
+    width: 100%;
+}
+
 .wrapper article{
     display: block;
     overflow: hidden;
@@ -207,33 +242,49 @@ main {
 
 
 
-#thesis {
-    background-color:  rgb(236, 236, 236);
-}
-.thesis-content {
-    
-    display: flex;
-
-}
-#thesis article {
-   
-    order:0;
-    flex:0 0 60%;
-    padding: 0rem 1.5rem;
-    color:rgb(58, 58, 58);
-
-}
-#thesis video{
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-
-
 
 footer {
-    background-color: rgb(161, 161, 161);
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-content:center;
+    color: rgb(87, 87, 87);
+    padding: 1rem 2rem;
+    background-color: #F3F3F3;
 }
+
 .bg-gray {
     background-color: rgb(204, 203, 203);
+}
+
+@media only screen and (max-width: 750px) {
+    .flex-row {
+        justify-content:space-around;
+
+    }
+    #logo .text-logo{
+        display: none;
+    }
+    .large{
+        display: none;
+    }
+    .short{
+        display: inline-block;
+    }
+    nav ul li {
+        margin-right: 3rem;
+    }
+    #learn {
+       flex-direction: column;
+    }
+    #learn img{
+        width:  100%;
+        padding: 0;
+        padding-bottom: 1rem;
+    }   
+    #learn .text-learn{
+        padding: 1rem 0.5rem;
+        
+      }
 }
