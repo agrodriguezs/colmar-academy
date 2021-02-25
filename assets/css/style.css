@@ -108,30 +108,41 @@ main {
     display: flex;
     
 }
-#orientation article {
+#orientation article, 
+#thesis article {
     order:0;
     flex:0 0 60%;
     padding: 2rem 1.5rem;
     color:rgb(58, 58, 58);
 }
-#orientation article h2{
+#orientation article h2,
+#thesis article h2 {
+    font-size: 2.2rem;
     padding: 1rem 0rem;
 }
-#orientation article img{
+#orientation article span,
+#thesis article span {
+    display: block;
+    margin: 1rem 0rem;
+}
+#orientation article img,
+#thesis article img {
     width: 100%;
     margin-bottom: 2rem;
 }
-#orientation ul li {
+#orientation ul li,
+#thesis ul li {
     display: flex;
     padding: 1rem;
     border: 1px solid rgb(211, 210, 210);
 }
-#orientation ul li img {
+#orientation ul li img,
+#thesis ul li img{
     order:0;
     width: 35%;
     margin: 1rem;
 }
-#orientation .description {
+ .description {
     display:flex;
     flex-direction:column;
     flex-wrap:nowrap;
@@ -139,11 +150,11 @@ main {
     align-content:center;
     color: rgb(87, 87, 87);
 }
-#orientation .description h3,
-#orientation .description p{
+ .description h3,
+ .description p{
     padding: 0.3rem 0;
 }
-#orientation .description a{
+ .description a{
     padding: 0.3rem 0;
     text-decoration: none;
     color: rgb(6, 87, 163);
@@ -152,9 +163,77 @@ main {
 #start {
     background-color: rgb(197, 197, 197);
 }
+#start h2,
+#thesis h2{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    color: rgb(58, 58, 58);
+    font-size: 2.5rem;
+}
+#thesis h2{
+    padding-bottom: 2rem;
+
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    padding: 0rem 3.5rem 2rem 3.5rem;
+}
+.wrapper article{
+    display: block;
+    overflow: hidden;
+    margin: 1rem;
+    background-color: ivory;
+}
+.wrapper article img{
+    width: 100%;
+    
+}
+.wrapper article h3,
+.wrapper article h4,
+.wrapper article p {
+    margin: 1rem;
+    color: rgb(87, 87, 87);
+}
+.wrapper article h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.wrapper article h3{
+    color: rgb(61, 60, 60);
+}
+
+
+
 #thesis {
     background-color:  rgb(236, 236, 236);
 }
+.thesis-content {
+    
+    display: flex;
+
+}
+#thesis article {
+   
+    order:0;
+    flex:0 0 60%;
+    padding: 0rem 1.5rem;
+    color:rgb(58, 58, 58);
+
+}
+#thesis video{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+
+
 footer {
     background-color: rgb(161, 161, 161);
+}
+.bg-gray {
+    background-color: rgb(204, 203, 203);
 }
