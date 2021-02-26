@@ -86,25 +86,28 @@ main,footer {
   flex-wrap:nowrap;
   justify-content:center;
   align-content:center;
-  color:#323A44;
+  color:#3F454F;
   padding: 2rem 1.5rem;
   
 }
 #learn .text-learn h2{
     width: 80%;
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
   }
   #learn .text-learn p{
     width: 80%;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
     padding: 2rem 0;   
   }
   #learn .text-learn button{
     width: 80%;
-    background-color:rgb(58, 58, 58);
+    background-color:#ACACAC;
     color: white;
-    font-size: 1rem;
-    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
   }
 #orientation {
     background-color: rgb(236, 236, 236);
@@ -148,6 +151,9 @@ main,footer {
     order:0;
     width: 35%;
     margin: 1rem;
+}
+.mobile {
+    display: none;
 }
  .description {
     display:flex;
@@ -284,7 +290,69 @@ footer {
         padding-bottom: 1rem;
     }   
     #learn .text-learn{
-        padding: 1rem 0.5rem;
+        font-size: 2rem;
+        padding: 0 1rem;
         
       }
+    #learn .text-learn h2,
+    #learn .text-learn p,
+    #learn .text-learn button
+    {
+    width: 100%;
+    }
+    #learn .text-learn button
+    {
+    margin-bottom: 2rem;
+    }
+    #orientation .info-main {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .tablet-pc {
+        display: none;
+    }
+    #orientation ul li{
+    flex-direction: column;
+    }
+    #orientation ul li img {
+    width:100%;
+    margin: 0px;
+    }
+    #start{
+        background-color: #F5F4F5;
+    }
+    #start h2{
+        padding: 1.5rem;
+    }
+    .wrapper {
+        display: block;
+        padding: 0rem 3.5rem 2rem 3.5rem;
+        background-color: #F5F4F5;
+    }
+    .wrapper article {
+        display: block;
+        padding: 1rem;
+        
+        background-color: #dadada;
+        
+
+    }
+    .wrapper article h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(77, 75, 75);
+    }
+
+    #thesis article {
+   
+        order:0;
+        flex:0 0 100%;
+        padding: 0rem;
+        color:rgb(58, 58, 58);
+    
+    }
+
+
 }
